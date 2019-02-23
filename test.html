@@ -3,10 +3,9 @@
 
 <script>
 
-function myFunction(){
-alert("callback works"); 
+function reverseAnimation(){
 //Get class name of div#two. 
-var state = document.getElementById("two"); 
+var state = document.getElementById("two").className; 
 var newState; 
 if(state === "forward"){
 newState = "back";
@@ -49,7 +48,7 @@ Click!
 </div>
 </div>
 </div>
-<button type="button" onclick="myFunction()"> Click me! </button>
+<button type="button" onclick="reverseAnimation()"> Click me! </button>
 
 
 
