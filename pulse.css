@@ -13,7 +13,7 @@ div#one{
   height: 500px; 
   width: 500px; 
 }
-div#two .forward{
+div#two{
   background-color: white; 
   margin: auto; 
   border-radius: 100%; 
@@ -21,18 +21,15 @@ div#two .forward{
   width: 450px; 
   position: relative; 
   top: 25px; 
+}
+div#two.forward{
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
+
 }
-div#two .back{
-  background-color: white; 
-  margin: auto; 
-  border-radius: 100%; 
-  height: 450px; 
-  width: 450px; 
-  position: relative; 
-  top: 25px; 
+
+div#two.back{
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
@@ -46,11 +43,9 @@ div#three{
   height: 400px; 
   width: 400px; 
   position: relative; 
-  top: 25px; 
-   
-  
+  top: 25px;  
 }
-div#four .forward{
+div#four{
   background-color: white; 
   margin: auto; 
   border-radius: 100%; 
@@ -58,20 +53,16 @@ div#four .forward{
   width: 350px; 
   position: relative; 
   top: 25px; 
+}
+div#four.forward{
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
   animation-delay: 1s;
 }
-div#four .back{
-   
-  background-color: white; 
-  margin: auto; 
-  border-radius: 100%; 
-  height: 350px; 
-  width: 350px; 
-  position: relative; 
-  top: 25px; 
+
+
+div#four.back{   
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
@@ -88,7 +79,7 @@ div#five{
   top: 25px; 
 }
 
-div#six .forward{
+div#six{
   background-color: white; 
   margin: auto; 
   border-radius: 100%; 
@@ -96,19 +87,14 @@ div#six .forward{
   width: 250px; 
   position: relative; 
   top: 25px; 
+}
+div#six.forward{ 
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
-  animation-delay: 2s; 
-}
-div#six .back{
-  background-color: white; 
-  margin: auto; 
-  border-radius: 100%; 
-  height: 250px; 
-  width: 250px; 
-  position: relative; 
-  top: 25px; 
+  animation-delay: 2s;
+} 
+div#six.back{
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
@@ -125,7 +111,7 @@ div#seven{
   top: 25px; 
 }
 
-div#eight .forward{
+div#eight{
   background-color: white; 
   margin: auto; 
   border-radius: 100%; 
@@ -133,20 +119,14 @@ div#eight .forward{
   width: 150px; 
   position: relative; 
   top: 25px; 
+}
+div#eight.forward{
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
   animation-delay: 3s; 
 }
-div#eight .back{
-
-  background-color: white; 
-  margin: auto; 
-  border-radius: 100%; 
-  height: 150px; 
-  width: 150px; 
-  position: relative; 
-  top: 25px; 
+div#eight.back{
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
@@ -165,7 +145,7 @@ div#nine{
 }
 
 
-div#ten .forward{
+div#ten{
   background-color: white; 
   margin: auto; 
   border-radius: 100%; 
@@ -175,21 +155,14 @@ div#ten .forward{
   top: 25px; 
   text-align: center;
   padding-top: 15px;  
+}
+div#ten.forward{ 
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
   animation-delay: 4s; 
 }
-div#ten .back{
-  background-color: white; 
-  margin: auto; 
-  border-radius: 100%; 
-  height: 35px; 
-  width: 50px; 
-  position: relative; 
-  top: 25px; 
-  text-align: center;
-  padding-top: 15px;  
+div#ten.back{
   animation-name: pulse; 
   animation-duration: 5s; 
   animation-iteration-count: infinite;
