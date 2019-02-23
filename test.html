@@ -3,18 +3,20 @@
 
 <script>
 
-function switch(){
-//Get whether I'm switching to backwards or forwards
-var state = document.getElementById("two").className;
+function myFunction(){
+alert("callback works"); 
+//Get class name of div#two. 
+var state = document.getElementById("two"); 
 var newState; 
-if(state === "forward"){ newState = "back";}
-else { newState = "forward"; } 
-//Get all my elements
-var elements = document.getElementsByClassName(state); 
-//Set their class to the appropriate class
+if(state === "forward"){
+newState = "back";
+} else {
+newState = "forward"; 
+}
+var animatedRings = document.getElementsByClassName(state); 
 var i; 
-for(i = 0; i < elements.length(); i++){
-    document[i].className = newState; 
+for(i = 0; i < animatedRings.length; i++){
+   animatedRings[i].className = newState; 
 }
 
 }
@@ -47,7 +49,7 @@ Click!
 </div>
 </div>
 </div>
-<button type="button" onClick="switch()"> Click me! </button>
+<button type="button" onclick="myFunction()"> Click me! </button>
 
 
 
