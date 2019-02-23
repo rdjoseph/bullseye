@@ -149,12 +149,10 @@ div#ten{
   background-color: white; 
   margin: auto; 
   border-radius: 100%; 
-  height: 35px; 
+  height: 50px; 
   width: 50px; 
   position: relative; 
   top: 25px; 
-  text-align: center;
-  padding-top: 15px;  
 }
 div#ten.forward{ 
   animation-name: pulse; 

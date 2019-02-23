@@ -12,16 +12,13 @@ newState = "back";
 } else {
 newState = "forward"; 
 }
-document.getElementById("two").className = newState;
-
-document.getElementById("four").className = newState;
-
-document.getElementById("six").className = newState;
-
-document.getElementById("eight").className = newState;
-
-document.getElementById("ten").className = newState;
-
+//getElementsByClassName returns a live HTMLCollection, so as I change the elements
+//the list updates. Thus normal ititeration causes elements to be skipped
+//So I'm treating it like a queue and pulling from the bottom till its empty 
+var toChange = document.getElementsByClassName(state); 
+while(toChange.length){
+  toChange[0].className = newState; 
+}
 
 }
 
@@ -42,7 +39,6 @@ document.getElementById("ten").className = newState;
 <div id="eight" class="back">
 <div id="nine">
 <div id="ten" class="back">
-Click!
 </div>
 </div>
 </div>
