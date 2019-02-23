@@ -12,11 +12,16 @@ newState = "back";
 } else {
 newState = "forward"; 
 }
-var animatedRings = document.getElementsByClassName(state); 
-var i; 
-for(i = 0; i < animatedRings.length; i++){
-   animatedRings[i].className = newState; 
-}
+document.getElementById("two").className = newState;
+
+document.getElementById("four").className = newState;
+
+document.getElementById("six").className = newState;
+
+document.getElementById("eight").className = newState;
+
+document.getElementById("ten").className = newState;
+
 
 }
 
@@ -28,15 +33,15 @@ for(i = 0; i < animatedRings.length; i++){
 
 <body>
 <div id="one">
-<div id="two" class="forward">
+<div id="two" class="back">
 <div id="three">
-<div id="four" class="forward">
+<div id="four" class="back">
 <div id="five">
-<div id="six" class="forward">
+<div id="six" class="back">
 <div id="seven">
-<div id="eight" class="forward">
+<div id="eight" class="back">
 <div id="nine">
-<div id="ten" class="forward">
+<div id="ten" class="back">
 Click!
 </div>
 </div>
